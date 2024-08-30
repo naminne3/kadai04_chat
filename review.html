@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>口コミ投稿</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Firebase 8 SDK を使用 -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+
+    <header>
+
+        <img src="/img/logo.png" alt="タウンログロゴ" id="logo">
+
+    </header>
+
+
+    <!-- 口コミ投稿フォーム -->
+    <div>
+        <div> 名前：<input type="text" id="uname"> </div>
+
+      <!-- 閉業のプルダウンメニュー -->
+        <div>
+            <label for="openclose">閉業：</label>
+            <select id="openclose">
+                <option value="閉業していた">閉業していた</option>
+                <option value="閉業はしていない・いなそう">閉業はしていない・いなそう</option>
+            </select>
+        </div>
+
+
+        <!-- 日付入力フィールド追加 -->
+        <div>
+            <label for="date">日付：</label>
+            <input type="date" id="date">
+        </div>
+
+        <!-- 経験のプルダウン追加 -->
+        <div>
+            <label for="experience">行った？：</label>
+            <select id="experience">
+                <option value="行った">行った</option>
+                <option value="行ってみたい">行ってみたい</option>
+                <option value="気になる">気になる</option>
+            </select>
+        </div>
+
+        <!-- 口コミテキストエリアと送信ボタン -->
+        <div>
+            <textarea id="text" cols="30" rows="10"></textarea>
+            <button id="send">送信</button>
+        </div>
+    </div>
+</body>
+</html>

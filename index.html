@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Firebase 8 SDK を使用 -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+
+         <img src="/img/logo.png" alt="タウンログロゴ" id="logo">
+        
+
+    </header>
+
+    <section id="shop-info-section">
+
+        <div class="shop-info">
+            <p class="categorymap">日本＞東京＞中央区＞月島＞日本食＞つくしや</p>
+            <p class="shop-openclose">開店中</p>
+            <p class="shop-name">月島もんじゃ「つくしや」</p>
+            <p class="shop-category">カテゴリ:日本料理</p>
+            <!-- <p class="shop-lastupdate">最終更新日：</p> -->
+            <p class="shop-update">最終更新日:2024/8/30</p>
+        </div>
+
+
+        <div class="shop-img-section">
+            <p class="photo">写真</p>
+            <hr class="hr1">
+            <div class="shop-img">
+                
+                <img src="/img/shopimg2.jpg" alt="施設の写真" class="popup-img">
+                <img src="/img/shopimg3.jpg" alt="施設の写真" class="popup-img">
+                <img src="/img/shopimg4.jpg" alt="施設の写真" class="popup-img">
+                <img src="/img/shopimg5.jpg" alt="施設の写真" class="popup-img">
+                <img src="/img/shopimg6.jpg" alt="施設の写真" class="popup-img">
+            </div>
+            <hr class="hr1">
+        </div>
+
+        <p class="hr2">
+    </section>
+    <section id="shop-review-section">
+        <div class="shop-review-section">
+            <p id="review-btn"><a href="review.html" >&#x1f58b;投稿する</a></p>
+            <p class="shop-review">コメント</p>
+        </div>
+    </section>
+    <div id="output" style="overflow: auto; height: 700px;"></div>
+</body>
+</html>
